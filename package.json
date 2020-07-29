@@ -30,5 +30,8 @@
   "bugs": {
     "url": "https://github.com/tominflux/aarketype/issues"
   },
-  "homepage": "https://github.com/tominflux/aarketype#readme"
+  "homepage": "https://github.com/tominflux/aarketype#readme",
+  "dependencies": {
+    "ffield": "^0.2.4"
+  }
 }
