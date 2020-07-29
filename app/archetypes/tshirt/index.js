@@ -35,8 +35,6 @@ const tshirtArchetype = createArchetype(
     }),
     //Validators (optional)
     [
-        //E.g. Item cannot be more than £100.00
-        (item) => item.properties.priceGBP.data < 100.0,
         //Restrict item sizes.
         (item) => {
             const validSizes = [
@@ -50,8 +48,24 @@ const tshirtArchetype = createArchetype(
                 }
             }
             return true
+        },
+        //Restrict colour ways.
+        (item) => {
+            const validColourways = [
+                "black", "white"
+            ]
+            for (const colourway of item.variationFactors.colourway) {
+                if (!validColourways.includes(colourway.data)) {
+                    throw new Error(
+                        `Colourway "${colourway.data}" is invalid.`
+                    )
+                }
+            }
+            return true
         }
     ]
 )
+
+console.log(tshirtArchetype)
 
 exports.tshirtArchetype = tshirtArchetype

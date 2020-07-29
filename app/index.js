@@ -19,4 +19,4 @@ const peaceTshirt = createItem(
 
 validateItem(peaceTshirt, tshirtArchetype)
 
-console.log(peaceTshirt)
+//console.log(peaceTshirt)

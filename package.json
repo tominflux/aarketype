@@ -7,7 +7,7 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "npx mocha 'test/**/*.js' --recursive"
   },
   "repository": {
     "type": "git",
@@ -33,5 +33,8 @@
   "homepage": "https://github.com/tominflux/aarketype#readme",
   "dependencies": {
     "ffield": "^0.2.4"
+  },
+  "devDependencies": {
+    "mocha": "^8.0.1"
   }
 }
