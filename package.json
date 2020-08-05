@@ -1,6 +1,6 @@
 {
   "name": "aarketype",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Small Node.js library for creating object archetypes and validating instances against them. ",
   "main": "lib/index.js",
   "directories": {
