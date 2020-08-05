@@ -4,6 +4,7 @@ const { createItem, validateItem } = require("../lib/item")
 
 const peaceTshirt = createItem(
     tshirtArchetype,
+    "peaceTshirt",
     {
         name: "Peace T-Shirt",
         priceGBP: 30.00,
