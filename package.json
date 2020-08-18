@@ -1,6 +1,6 @@
 {
   "name": "aarketype",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Small Node.js library for creating object archetypes and validating instances against them. ",
   "main": "lib/index.js",
   "directories": {
@@ -32,9 +32,9 @@
   },
   "homepage": "https://github.com/tominflux/aarketype#readme",
   "dependencies": {
-    "ffield": "^0.2.4"
+    "ffield": "^0.2.5"
   },
   "devDependencies": {
-    "mocha": "^8.0.1"
+    "mocha": "^8.1.1"
   }
 }
